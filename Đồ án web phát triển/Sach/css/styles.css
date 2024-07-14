@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    /* Màu nền chung */
+    margin: 0;
+    padding: 0;
+}
+
+/* Phần header */
+.header {
+    background-color: #333;
+    /* Màu nền header */
+    color: #fff;
+    /* Màu chữ trong header */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Logo trong header */
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+
+/* Ảnh logo */
+.header .logo img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+/* Phần thanh điều hướng */
+.nav {
+    margin-top: 10px;
+    text-align: center;
+    /* Canh giữa các phần trong thanh điều hướng */
+}
+
+/* Các liên kết trong thanh điều hướng */
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    display: inline-block;
+    /* Chuyển thành dạng block để có thể áp dụng margin */
+}
+
+/* Hiệu ứng khi di chuột qua các liên kết */
+.nav a:hover {
+    text-decoration: underline;
+}
+
+/* Phần nội dung chính */
+.content {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    /* Màu nền nội dung */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* Hiệu ứng bóng đổ */
+}
+
+/* Danh sách sách */
+.book-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+/* Mỗi cuốn sách */
+.book-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 20px;
+    width: calc(33% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Tiêu đề sách */
+.book-item h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+/* Thông tin sách */
+.book-item p {
+    margin: 10px 0;
+}
+
+/* Hình ảnh sách */
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Form thêm vào giỏ hàng */
+.add-to-cart-form {
+    margin-top: 10px;
+}
+
+/* Input số lượng sách */
+.add-to-cart-form input[type="number"] {
+    width: 50px;
+    padding: 5px;
+    margin-right: 10px;
+}
+
+/* Nút thêm vào giỏ hàng */
+.add-to-cart-form button {
+    background-color: #28a745;
+    /* Màu nền nút */
+    color: #fff;
+    /* Màu chữ nút */
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Hiệu ứng khi di chuột qua nút */
+.add-to-cart-form button:hover {
+    background-color: #218838;
+}
+
+.search-bar {
+    flex: 1;
+    /* Đặt phần này mở rộng ra để chiếm hết không gian còn lại */
+    text-align: center;
+    /* Căn giữa nội dung */
+}
+
+.search-bar form {
+    display: inline-block;
+    /* Hiển thị dưới dạng block */
+}
+
+.search-bar input[type="text"] {
+    padding: 8px;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.search-bar button {
+    padding: 8px 15px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.social-icons {
+    margin-top: 20px;
+    /* Khoảng cách từ phần "Về chúng tôi" */
+}
+
+.social-icon {
+    margin-right: 20px;
+    /* Khoảng cách giữa các biểu tượng */
+    text-decoration: none;
+    color: #c69720;
+    /* Màu sắc của icon, có thể thay đổi */
+    transition: color 0.3s;
+    /* Hiệu ứng chuyển đổi màu khi di chuột qua */
+}
+
+.social-icon:hover {
+    color: #007bff;
+    /* Màu sắc khi hover, có thể thay đổi */
+}
+
+.social-icon i {
+    font-size: 32px;
+    /* Kích thước của icon, có thể thay đổi */
+}
